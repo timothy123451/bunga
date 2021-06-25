@@ -8,7 +8,7 @@ dic = {0 : 'Daisy', 1 : 'Morning Glory', 2 : 'Pot Flower', 3 : 'Sun Pride', 4 : 
 
 model = load_model('model.h5')
 
-model.make_predict_function()
+model._make_predict_function()
 
 def predict_label(img_path):
 	i = image.load_img(img_path, target_size=(100,100))
